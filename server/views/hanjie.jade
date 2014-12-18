@@ -1,0 +1,16 @@
+extends base
+
+block styles
+    link(rel="stylesheet", href="/styles/hanjie.css")
+
+
+block scripts
+    script.
+        console.log(new Date())
+    script(src="/libs/jquery.color-2.1.2.min.js")
+
+    script(type="text/javascript", src="/scripts/hanjie.js")
+
+
+block gameboard
+    #board

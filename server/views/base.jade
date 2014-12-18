@@ -1,10 +1,38 @@
 doctype html
+
 html
     head
         title= title
-        link(rel='stylesheet', href='/styles/base.css')
+
+        //- link(rel="stylesheet", href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css")
+        //- link(rel="stylesheet", href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap-theme.min.css")
+        link(rel="stylesheet", href="/libs/bootstrap.min.css")
+        link(rel="stylesheet", href="/libs/bootstrap-theme.min.css")
+        link(rel="stylesheet", href="/styles/base.css")
+
+        block styles
+
+        //- script(src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js")
+        //- script(src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js")
+        script(src="/libs/jquery.min.js")
+        script(src="/libs/bootstrap.min.js")
+        script(src="/libs/underscore.js")
 
     body
         block content
 
-        block scripts
+        .container
+            .header
+                nav
+                    ul.nav.nav-pills.pull-right
+                        li: a(title="Start a new game", href="#newgame") New Game
+                        li: a(title="Restart the current game", href="#restart") Restart Game
+
+                h3.text-muted= title
+
+            .jumbotron
+                block gameboard
+
+
+        .scripts
+            block scripts

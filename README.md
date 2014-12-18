@@ -1,6 +1,6 @@
-# Node Template
+# Hanjie
 
-A template for websites built on Node and Express
+A site that allows my dear old mum to solve hanjie puzzles
 
 ## Setup
 

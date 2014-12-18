@@ -1,5 +1,5 @@
-exports.index = function (request, response) {
+exports.hanjie = function (request, response) {
     'use strict';
-    var data = { title: 'Node Template' };
-    response.render('index', data);
+    var data = { title: 'Hanjie' };
+    response.render('hanjie', data);
 };

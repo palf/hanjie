@@ -1,7 +1,15 @@
 {
-  "name": "website-template",
-  "version": "0.0.0",
+  "name": "hanjie",
+  "version": "0.0.1",
+  "description": "hanjie puzzles",
   "private": true,
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/palf/hanjie.git"
+  },
+  "bugs": {
+    "url": "https://github.com/palf/hanjie/issues"
+  },
   "scripts": {
     "start": "node server/start.js",
     "test": "grunt test"
